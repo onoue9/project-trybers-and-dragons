@@ -1,4 +1,4 @@
-abstract class Race {
+export default abstract class Race {
   constructor(private _name: string, private _dexterity: number) { }
 
   public static createdRacesInstances() {
@@ -10,5 +10,3 @@ abstract class Race {
   get name(): string { return this._name; }
   get dexterity(): number { return this._dexterity; }
 }
-
-export default Race;
