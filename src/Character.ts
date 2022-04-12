@@ -35,11 +35,11 @@ export default class Character implements Fighter {
   }
 
   attack(enemy: SimpleFighter) {
-    enemy.receiveDamage(this._strength);
+    return enemy.receiveDamage(this._strength);
   }
 
   special(enemy: SimpleFighter) {
-    enemy.receiveDamage(this._strength * 2);
+    return enemy.receiveDamage(this._strength * 2);
   }
 
   levelUp() {
