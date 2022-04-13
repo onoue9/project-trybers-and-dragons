@@ -3,7 +3,6 @@ import { SimpleFighter } from '../Fighter';
 abstract class Battle {
   constructor(
     protected player1: SimpleFighter,
-    protected player2: SimpleFighter,
   ) { }
 
   fight(): number {
