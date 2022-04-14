@@ -18,8 +18,10 @@ const pvp = new PVP(player2, player3);
 
 const pve = new PVE(player1, [monster1, monster2]);
 
-const runBattles = (battles: Battle[]) => (
-  battles.map((battle) => (battle.fight()))
-);
+const runBattles = (battles: Battle[]) => {
+  for (let i = 0; i < battles.length; i += 1) {
+    battles[i].fight();
+  }
+};
 
 export { player1, player2, player3, monster1, monster2, pvp, pve, runBattles };

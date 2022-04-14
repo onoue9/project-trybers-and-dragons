@@ -23,5 +23,6 @@ const result = () => {
     if (monster1.lifePoints !== -1 && monster2.lifePoints !== -1) res = false;
   }
   if (player2.lifePoints !== -1 && player3.lifePoints !== -1) res = false;
+  console.log(res);
   return res;
 };

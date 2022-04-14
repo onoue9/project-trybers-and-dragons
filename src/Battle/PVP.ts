@@ -12,19 +12,21 @@ export default class PVP extends Battle {
   }
 
   fight() { 
-    if (this._player1.strength > this._player2.strength) {
-      console.log(this._player1.attack(this._player2));
-      console.log(this._player2.attack(this._player1));
-    } else {
-      console.log(this._player2.attack(this._player1));
-      console.log(this._player1.attack(this._player2));
-    }
-    if (this._player1.lifePoints < 0) { 
-      console.log('Player 1 morreu !');
-    }
-    if (this._player2.lifePoints < 0) {
-      console.log('Player 2 morreu !');
-    }
+    this.ifFight();
     return this._player1.lifePoints === -1 ? -1 : 1;
+  }
+
+  private ifFight() { 
+    while (this._player1.lifePoints > 0) { 
+      console.log(this._player1.attack(this._player2));
+      console.log(this._player2.attack(this._player1));
+      if (this._player1.lifePoints < 0) { 
+        console.log('Player 1 morreu !');
+        break;
+      } else if (this._player2.lifePoints < 0) { 
+        console.log('Player2 morreu !');
+        break;
+      }
+    }
   }
 }
