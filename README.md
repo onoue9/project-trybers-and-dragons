@@ -4,7 +4,7 @@
 not deployed yet
 
 # Contexto
-Neste projeto trabalhamos nosso aprendizado em TypeScript e POO (Programação Orientada a Objetos). Onde utilizamos herança, interface, polimorfismo e alguns princípios de SOLID. Basicamente nós construimos um universo medieval onde existem outras criaturas além dos humanos, como elfos, anões e até dragões. Como nesse mundo de fantasia nem tudo é resolvido na taverna com conversas e bebidas, também criamos classes que executam lutas entres esses personagens, retornando no fina o mais forte deles. 
+Neste projeto trabalhamos nosso aprendizado em TypeScript e POO (Programação Orientada a Objetos). Onde utilizamos herança, interface, polimorfismo e alguns princípios de SOLID. Basicamente nós construimos um universo medieval onde existem outras criaturas além dos humanos, como elfos, anões e até dragões. Como nesse mundo de fantasia nem tudo é resolvido na taverna com conversas e bebidas, também criamos classes que executam lutas entres esses personagens, retornando no final o mais forte deles. 
 
 ## Técnologias usadas
 
